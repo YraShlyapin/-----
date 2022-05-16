@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(text/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: Roboto-light;
+    src: url(text/Roboto-Light.ttf);
+}
+*{
+    margin: 0;
+    font-family: Roboto-light;
+    font-weight: 100;
+}
+
+p{
+    font-size: 12.5pt;
+}
+
+.nav-bar{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar>.red{
+    width: 9.92%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    font-size: 17.5pt;
+}
+
+.nav-bar-href{
+    display: flex;
+    margin-left: 25px;
+}
+
+.nav-bar-href>a{
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 16pt;
+    padding-right: 10px;
+}
+
+#withImg{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 75px);
+    overflow: hidden;
+}
+
+#withImg::before{
+    position: absolute;
+    content: '';
+    width: 200%;
+    height: 200vh;
+    background-attachment: fixed, fixed;
+    background-size: 110%;
+    background-position: -100px 55%;
+    background-image: url(img/cart.png);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.cent{
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+    margin-bottom: 20px;
+}
+
+#withImg>div{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: -125px;
+    border-radius: 50% 0 0 0;
+}
+
+#withImg>h1{
+    font-size: 75pt;
+    color: orangered;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    /* background-color: #fff; */
+}
+
+.inline{
+    display: flex;
+}
+
+.right{
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.left{
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.img{
+    height: 40vh;
+}
+.redline{
+    border-bottom: 2px red solid;
+}
+.br{
+    border-right: 1px solid gray;
+}
